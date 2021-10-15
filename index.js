@@ -3,7 +3,9 @@ const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
-  res.send('Hello World!, les saluda la mayra exquisita');
+    console.log("solicitud recibida desde nodejs")
+    res.send('Solicitud recibida para endpoint GET con mayra');
+
 })
 
 app.listen(port, () => {
